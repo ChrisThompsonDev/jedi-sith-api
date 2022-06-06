@@ -175,16 +175,6 @@ app.get('/api/:name', (request, response) => {
     }
 })
 
-/* app.get('/api/:person', (request, response) => {
-    const forceUser = request.params.name.toLowerCase()
-    if(person[forceUser]){
-        response.json(person[forceUser])
-    }else{
-        response.json(person['Unknown'])
-    }
-}) */
-
-
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
